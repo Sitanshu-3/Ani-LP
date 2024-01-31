@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Englebert&family=Luckiest+Guy&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Caudex";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+}
+
+#back{
+    width: 100%;
+    height: 100vh;
+}
+
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#workingarea{
+    position: relative;
+    margin:  0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+#nav img{
+    height: 60px;
+}
+
+#nleft, #nright{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#nav a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#heroleft{
+    min-width: 50%;
+}
+
+#heroleft .elem{
+    position: relative;
+    height: 6vw;
+    overflow: hidden;
+}
+
+#heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+#heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 1;
+    font-family: "Luckiest Guy";
+    color: white;
+    font-weight: 100; 
+    font-size: 6vw;
+}
+
+#heroleft button{
+    pointer-events: all;
+    padding: .2vw 1vw;
+    font-size: 1vw;
+    font-family: "Caudex";
+    margin-top: 2vw;
+}
+
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    color: #fff;
+}
+
+#heroright p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right
+}
+
+#heroright #imagediv{
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c03a8fbe-d542-45ed-b604-55081dacb166/dgsqe8d-7118e985-a6c3-4d83-b5dc-a4156a604d7a.png/v1/fill/w_894,h_894,q_70,strp/suguru_geto_by_maledettaevergarden_dgsqe8d-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAyNCIsInBhdGgiOiJcL2ZcL2MwM2E4ZmJlLWQ1NDItNDVlZC1iNjA0LTU1MDgxZGFjYjE2NlwvZGdzcWU4ZC03MTE4ZTk4NS1hNmMzLTRkODMtYjVkYy1hNDE1NmE2MDRkN2EucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.EiSlSZs7666PAQ86qj9O0pwl4FlPP0-HMD5hGqcaUQ8);
+    background-size: cover;
+    background-position: top;
+}
+
+#heroright p:nth-child(3){
+    margin-bottom: 100px;
+}
